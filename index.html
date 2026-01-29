@@ -8,43 +8,63 @@
   </head>
   <body>
     <nav
-      class="w-full h-[70px] flex items-center justify-between bg-indigo-500 text-white"
+      class="w-full h-[60px] md:h-[70px] px-4 md:px-8 flex items-center justify-between bg-indigo-500 text-white shadow-lg"
+      aria-label="main navbar"
     >
-      <div class="px-[3rem]">
-        <h1 class="text-[2rem] font-semibold text-yellow-500">
-          mbiyu<span class="text-white">inspired</span>
-        </h1>
+      <!-- logo/brand -->
+      <div class="flex-shrink-0">
+        <a
+          href="?"
+          class="text-xl md:text-2xl lg:text-[2rem] font-bold text-yellow-400 hover:text-yellow-300 transition-colors"
+          >mbiyu<span class="text-white">inspired</span></a
+        >
       </div>
-      <ul class="flex items-center justify-center h-full font-semibold">
-        <li class="mx-[1rem]">
-          <a class="inline-block p-[4px] h-full text-[1.2rem]/[60px]" href=""
+      <!-- desktop nav -->
+      <ul
+        class="hidden md:flex items-center px-4 h-full font-semibold space-x-1"
+      >
+        <li class="h-full">
+          <a
+            class="inline-flex items-center px-4 h-full text-[1.1rem] hover:bg-indigo-600 transition-all duration-300 ease hover:text-yellow-400 rounded-t-lg"
+            href=""
             >Home</a
           >
         </li>
-        <li class="mx-[1rem]">
-          <a class="inline-block p-[4px] h-full text-[1.2rem]/[60px]" href=""
+        <li class="h-full">
+          <a
+            class="inline-flex items-center px-4 h-full text-[1.1rem] hover:bg-indigo-600 transition-all duration-300 ease hover:text-yellow-400 rounded-t-lg"
+            href=""
             >Education</a
           >
         </li>
-        <li class="mx-[1rem]">
-          <a class="inline-block p-[4px] h-full text-[1.2rem]/[60px]" href=""
+        <li class="h-full">
+          <a
+            class="inline-flex items-center px-4 h-full text-[1.1rem] hover:bg-indigo-600 transition-all duration-300 ease hover:text-yellow-400 rounded-t-lg"
+            href=""
             >Blogs</a
           >
         </li>
-        <li class="mx-[1rem]">
-          <a class="inline-block p-[4px] h-full text-[1.2rem]/[60px]" href=""
+        <li class="h-full">
+          <a
+            class="inline-flex items-center px-4 h-full text-[1.1rem] hover:bg-indigo-600 transition-all duration-300 ease hover:text-yellow-400 rounded-t-lg"
+            href=""
             >About</a
           >
         </li>
-        <li class="mx-[1rem]">
-          <a class="inline-block p-[4px] h-full text-[1.2rem]/[60px]" href=""
+        <li class="h-full">
+          <a
+            class="inline-flex items-center px-4 h-full text-[1.1rem] hover:bg-indigo-600 transition-all duration-300 ease hover:text-yellow-400 rounded-t-lg"
+            href=""
             >Contact</a
           >
         </li>
       </ul>
       <div>
-        <button>login</button>
-        <button>signup</button>
+        <a
+          href="#"
+          class="text-xl font-semibold hover:text-red-400 transition-colors duration-300 ease"
+          >Get started</a
+        >
       </div>
     </nav>
   </body>
