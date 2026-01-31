@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>mbiyuInspired</title>
     <link rel="stylesheet" href="./src/output.css" />
-    <!-- swiper cdn -->
+    <!-- Slick Carousel CSS -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
     />
     <!-- font-awesome -->
     <script
@@ -35,36 +41,62 @@
       >
         <li class="h-full">
           <a
-            class="inline-flex items-center px-4 h-full text-[1.1rem] hover:bg-indigo-600 transition-all duration-300 ease hover:text-yellow-400 rounded-t-lg"
-            href=""
+            class="inline-flex items-center px-4 h-full text-[1.1rem] transition-all duration-300 ease hover:text-yellow-400 rounded-t-lg"
+            href="index.html"
             >Home</a
           >
         </li>
-        <li class="h-full">
+        <li class="group h-full relative">
           <a
-            class="inline-flex items-center px-4 h-full text-[1.1rem] hover:bg-indigo-600 transition-all duration-300 ease hover:text-yellow-400 rounded-t-lg"
-            href=""
-            >Blogs</a
+            class="inline-flex items-center px-4 h-full text-[1.1rem] transition-all duration-300 ease hover:text-yellow-400 rounded-t-lg"
+            href="blogs.html"
+            >Articles
+            <i class="fa-solid fa-chevron-down pl-[5px] text-[1rem]"></i
+          ></a>
+          <ul
+            class="hidden border-t border-t-3 bg-indigo-500 border-t-yellow-500 w-[250px] absolute group-hover:block transition-all duration-300 ease"
           >
+            <li class="my-[1rem] ml-[10px]">
+              <a
+                href=""
+                class="text-[1.1rem] hover:text-yellow-400 transition-all duration-300 ease"
+                >Technology</a
+              >
+            </li>
+            <li class="my-[1rem] ml-[10px]">
+              <a
+                href=""
+                class="text-[1.1rem] hover:text-yellow-400 transition-all duration-300 ease"
+                >Education</a
+              >
+            </li>
+            <li class="my-[1rem] ml-[10px]">
+              <a
+                href=""
+                class="text-[1.1rem] hover:text-yellow-400 transition-all duration-300 ease"
+                >Trending</a
+              >
+            </li>
+          </ul>
         </li>
         <li class="h-full">
           <a
-            class="inline-flex items-center px-4 h-full text-[1.1rem] hover:bg-indigo-600 transition-all duration-300 ease hover:text-yellow-400 rounded-t-lg"
-            href=""
+            class="inline-flex items-center px-4 h-full text-[1.1rem] transition-all duration-300 ease hover:text-yellow-400 rounded-t-lg"
+            href="services.html"
             >Services</a
           >
         </li>
         <li class="h-full">
           <a
-            class="inline-flex items-center px-4 h-full text-[1.1rem] hover:bg-indigo-600 transition-all duration-300 ease hover:text-yellow-400 rounded-t-lg"
-            href=""
+            class="inline-flex items-center px-4 h-full text-[1.1rem] transition-all duration-300 ease hover:text-yellow-400 rounded-t-lg"
+            href="about.html"
             >About</a
           >
         </li>
         <li class="h-full">
           <a
-            class="inline-flex items-center px-4 h-full text-[1.1rem] hover:bg-indigo-600 transition-all duration-300 ease hover:text-yellow-400 rounded-t-lg"
-            href=""
+            class="inline-flex items-center px-4 h-full text-[1.1rem] transition-all duration-300 ease hover:text-yellow-400 rounded-t-lg"
+            href="contact.html"
             >Contact</a
           >
         </li>
@@ -92,79 +124,181 @@
           skill and experience in these two fields with you.
         </p>
       </div>
-      <div>
+
+      <div class="container mx-auto px-4 py-8">
         <h2
           class="font-bold text-5xl text-center mt-[2rem] mb-[3rem] text-slate-900"
         >
           Recent Posts
         </h2>
-        <div class="flex flex-row gap-[1rem]">
-          <div class="w-[400px] shadow-[0px_5px_10px_rgba(0,0,0,0.25)]">
-            <img src="./images/acad01.jpeg" alt="slide-show" class="w-full" />
-            <div class="p-[1rem]">
-              <h3
-                class="text-[1rem] font-semibold tracking-wider mb-[0.8rem] text-orange-400 text-shadow-[2px_2px_10px_rgba(0,0,0,0.5)]"
+
+        <!-- Custom Navigation Arrows -->
+        <!-- <div class="slider-container">
+          <div class="custom-arrow prev">❮</div>
+          <div class="custom-arrow next">❯</div> -->
+
+          <!-- Slick Carousel Wrapper -->
+          <div class="slider-wrapper">
+            <!-- Card 1 -->
+            <div class="px-2">
+              <div
+                class="w-full shadow-[0px_5px_10px_rgba(0,0,0,0.25)] rounded-lg overflow-hidden bg-white"
               >
-                Education
-              </h3>
-              <h2 class="text-xl font-bold">
-                Why CBC headache is just the beginning for grade 10 teachers
-              </h2>
-              <p class="mt-[1.5rem] text-[1.1rem]">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
-                maiores dolores tempore, eius perspiciatis culpa.
-              </p>
+                <img
+                  src="./images/acad01.jpeg"
+                  alt="slide-show"
+                  class="w-full h-48 object-cover"
+                />
+                <div class="p-[1rem]">
+                  <h3
+                    class="text-[1rem] font-semibold tracking-wider mb-[0.8rem] text-orange-400"
+                  >
+                    Education
+                  </h3>
+                  <h2 class="text-xl font-bold mb-2">
+                    Why CBC headache is just the beginning for grade 10 teachers
+                  </h2>
+                  <p class="text-gray-600">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Iste maiores dolores tempore, eius perspiciatis culpa.
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="w-[400px] shadow-[0px_5px_10px_rgba(0,0,0,0.25)]">
-            <img src="./images/acad01.jpeg" alt="slide-show" class="w-full" />
-            <div class="p-[1rem]">
-              <h3
-                class="text-[1rem] font-semibold tracking-wider mb-[0.8rem] text-orange-400 text-shadow-[2px_2px_10px_rgba(0,0,0,0.5)]"
+
+            <!-- Card 2 -->
+            <div class="px-2">
+              <div
+                class="w-full shadow-[0px_5px_10px_rgba(0,0,0,0.25)] rounded-lg overflow-hidden bg-white"
               >
-                Education
-              </h3>
-              <h2 class="text-xl font-bold">
-                Why CBC headache is just the beginning for grade 10 teachers
-              </h2>
-              <p class="mt-[1.5rem] text-[1.1rem]">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
-                maiores dolores tempore, eius perspiciatis culpa.
-              </p>
+                <img
+                  src="./images/acad01.jpeg"
+                  alt="slide-show"
+                  class="w-full h-48 object-cover"
+                />
+                <div class="p-[1rem]">
+                  <h3
+                    class="text-[1rem] font-semibold tracking-wider mb-[0.8rem] text-orange-400"
+                  >
+                    Education
+                  </h3>
+                  <h2 class="text-xl font-bold mb-2">
+                    Why CBC headache is just the beginning for grade 10 teachers
+                  </h2>
+                  <p class="text-gray-600">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Iste maiores dolores tempore, eius perspiciatis culpa.
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="w-[400px] shadow-[0px_5px_10px_rgba(0,0,0,0.25)]">
-            <img src="./images/acad01.jpeg" alt="slide-show" class="w-full" />
-            <div class="p-[1rem]">
-              <h3
-                class="text-[1rem] font-semibold tracking-wider mb-[0.8rem] text-orange-400 text-shadow-[2px_2px_10px_rgba(0,0,0,0.5)]"
+
+            <!-- Card 3 -->
+            <div class="px-2">
+              <div
+                class="w-full shadow-[0px_5px_10px_rgba(0,0,0,0.25)] rounded-lg overflow-hidden bg-white"
               >
-                Education
-              </h3>
-              <h2 class="text-xl font-bold">
-                Why CBC headache is just the beginning for grade 10 teachers
-              </h2>
-              <p class="mt-[1.5rem] text-[1.1rem]">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
-                maiores dolores tempore, eius perspiciatis culpa.
-              </p>
+                <img
+                  src="./images/acad01.jpeg"
+                  alt="slide-show"
+                  class="w-full h-48 object-cover"
+                />
+                <div class="p-[1rem]">
+                  <h3
+                    class="text-[1rem] font-semibold tracking-wider mb-[0.8rem] text-orange-400"
+                  >
+                    Education
+                  </h3>
+                  <h2 class="text-xl font-bold mb-2">
+                    Why CBC headache is just the beginning for grade 10 teachers
+                  </h2>
+                  <p class="text-gray-600">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Iste maiores dolores tempore, eius perspiciatis culpa.
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="w-[400px] shadow-[0px_5px_10px_rgba(0,0,0,0.25)]">
-            <img src="./images/acad01.jpeg" alt="slide-show" class="w-full" />
-            <div class="p-[1rem]">
-              <h3
-                class="text-[1rem] font-semibold tracking-wider mb-[0.8rem] text-orange-400 text-shadow-[2px_2px_10px_rgba(0,0,0,0.5)]"
+
+            <!-- Card 4 -->
+            <div class="px-2">
+              <div
+                class="w-full shadow-[0px_5px_10px_rgba(0,0,0,0.25)] rounded-lg overflow-hidden bg-white"
               >
-                Education
-              </h3>
-              <h2 class="text-xl font-bold">
-                Why CBC headache is just the beginning for grade 10 teachers
-              </h2>
-              <p class="mt-[1.5rem] text-[1.1rem]">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
-                maiores dolores tempore, eius perspiciatis culpa.
-              </p>
+                <img
+                  src="./images/acad01.jpeg"
+                  alt="slide-show"
+                  class="w-full h-48 object-cover"
+                />
+                <div class="p-[1rem]">
+                  <h3
+                    class="text-[1rem] font-semibold tracking-wider mb-[0.8rem] text-orange-400"
+                  >
+                    Education
+                  </h3>
+                  <h2 class="text-xl font-bold mb-2">
+                    Why CBC headache is just the beginning for grade 10 teachers
+                  </h2>
+                  <p class="text-gray-600">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Iste maiores dolores tempore, eius perspiciatis culpa.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="px-2">
+              <div
+                class="w-full shadow-[0px_5px_10px_rgba(0,0,0,0.25)] rounded-lg overflow-hidden bg-white"
+              >
+                <img
+                  src="./images/acad01.jpeg"
+                  alt="slide-show"
+                  class="w-full h-48 object-cover"
+                />
+                <div class="p-[1rem]">
+                  <h3
+                    class="text-[1rem] font-semibold tracking-wider mb-[0.8rem] text-orange-400"
+                  >
+                    Education
+                  </h3>
+                  <h2 class="text-xl font-bold mb-2">
+                    Why CBC headache is just the beginning for grade 10 teachers
+                  </h2>
+                  <p class="text-gray-600">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Iste maiores dolores tempore, eius perspiciatis culpa.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="px-2">
+              <div
+                class="w-full shadow-[0px_5px_10px_rgba(0,0,0,0.25)] rounded-lg overflow-hidden bg-white"
+              >
+                <img
+                  src="./images/acad01.jpeg"
+                  alt="slide-show"
+                  class="w-full h-48 object-cover"
+                />
+                <div class="p-[1rem]">
+                  <h3
+                    class="text-[1rem] font-semibold tracking-wider mb-[0.8rem] text-orange-400"
+                  >
+                    Education
+                  </h3>
+                  <h2 class="text-xl font-bold mb-2">
+                    Why CBC headache is just the beginning for grade 10 teachers
+                  </h2>
+                  <p class="text-gray-600">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Iste maiores dolores tempore, eius perspiciatis culpa.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -377,32 +511,100 @@
               </div>
             </div>
           </div>
+          <div
+            class="group w-full max-w-[350px] md:max-w-full shadow-[0px_5px_10px_rgba(0,0,0,0.25)] mb-[2rem] overflow-hidden cursor-pointer transition-transform duration-300 hover:scale-[1.02] rounded-[3px]"
+          >
+            <div class="relative h-[250px] md:h-[300px] object-cover">
+              <img
+                src="./images/acad01.jpeg"
+                alt="slide-show"
+                class="w-full h-[300px]"
+              />
+              <div
+                class="p-[1rem] text-center absolute top-[-100%] group-hover:top-0 bg-linear-to-b from-indigo-500 to-transparent h-[300px] flex flex-col align-center justify-center text-white transition-all ease-out duration-500"
+              >
+                <h3
+                  class="text-xl font-semibold tracking-wider mb-[0.8rem] text-yellow-500 text-shadow-[2px_2px_10px_rgba(0,0,0,0.5)]"
+                >
+                  Web Design
+                </h3>
+                <h2 class="text-2xl font-bold text-2xl">
+                  Get a stunning website that is professionally done.
+                </h2>
+                <div class="mt-[1rem]">
+                  <i
+                    class="fa-solid fa-arrow-up-right-from-square text-indigo-500 font-bold bg-white text-xl inline-flex border border-3 border-white p-3 rounded-full"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <footer class="text-white bg-indigo-600">
-      <div class="px-8 py-4 flex align-center justify-between">
-        <div>
+      <div class="px-8 py-4 flex justify-between">
+        <div class="w-[33%]">
           <h2 class="text-2xl font-semibold">Follow Us</h2>
-          <div class="flex align-center justify-center gap-4 mt-3">
-            <a href=""><i class="fa-brands fa-linkedin-in text-2xl"></i></a>
-            <a href=""><i class="fa-brands fa-facebook-f text-2xl"></i></a>
-            <a href=""><i class="fa-brands fa-twitter text-2xl"></i></a>
-            <a href=""><i class="fa-brands fa-instagram text-2xl"></i></a>
+          <div class="flex align-center justify-left gap-6 pt-3 mt-3">
+            <a href=""
+              ><i
+                class="fa-brands fa-linkedin-in text-2xl p-3 border border-2 border-white rounded-full hover:bg-white hover:text-indigo-500 transition-all duration-400 ease"
+              ></i
+            ></a>
+            <a href=""
+              ><i
+                class="fa-brands fa-facebook text-2xl p-3 border border-2 border-white rounded-full hover:bg-white hover:text-indigo-500 transition-all duration-400 ease"
+              ></i
+            ></a>
+            <a href=""
+              ><i
+                class="fa-brands fa-twitter text-2xl p-3 border border-2 border-white rounded-full hover:bg-white hover:text-indigo-500 transition-all duration-400 ease"
+              ></i
+            ></a>
+            <a href=""
+              ><i
+                class="fa-brands fa-instagram text-2xl p-3 border border-2 border-white rounded-full hover:bg-white hover:text-indigo-500 transition-all duration-400 ease"
+              ></i
+            ></a>
           </div>
         </div>
-        <div>
-          <h2>Quick Links</h2>
-          <div>
-            <a href="">Terms and conditions</a>
-            <a href="">What's New</a>
-            <a href="">Our Services</a>
-            <a href="">Work With Us</a>
-          </div>
+        <div class="w-[33%]">
+          <h2 class="text-2xl font-semibold">Quick Links</h2>
+          <ul class="flex flex-col align-center justify-center mt-3 pr-3">
+            <li>
+              <a
+                href=""
+                class="text-[1.2rem] font-semibold inline-bold hover:ml-[3px] transition-all duration-400 ease"
+                >Terms and Conditions</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-[1.2rem] font-semibold inline-bold hover:ml-[3px] transition-all duration-400 ease"
+                >What's New</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-[1.2rem] font-semibold inline-bold hover:ml-[3px] transition-all duration-400 ease"
+                >Our Services</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-[1.2rem] font-semibold inline-bold hover:ml-[3px] transition-all duration-400 ease"
+                >Work With Us</a
+              >
+            </li>
+          </ul>
         </div>
-        <div>
-          <h2>Subscribe to our Newsletter</h2>
-          <p>
+        <div class="w-[33%]">
+          <h2 class="text-2xl font-semibold">Subscribe to our Newsletter</h2>
+          <p class="text-[1.2rem] inline-bold">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
             quia.
           </p>
@@ -411,8 +613,13 @@
               type="email"
               placeholder="Enter Email"
               aria-label="Enter email"
+              class="bg-white px-4 py-2 w-[80%] text-black text-[1.1rem] border-none focus:outline-none"
             />
-            <input type="submit" value="Submit" />
+            <input
+              type="submit"
+              value="Submit"
+              class="bg-yellow-500 px-4 py-2 text-indigo-500 font-bold"
+            />
           </form>
         </div>
       </div>
@@ -422,5 +629,8 @@
         Copyright &copy; 2026 mbiyuInspired | Powered by Mbiyu Design
       </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
