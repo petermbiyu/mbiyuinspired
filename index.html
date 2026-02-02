@@ -117,7 +117,7 @@
       <div class="mt-[1rem] md:mt-[2rem]">
         <h2 class="text-sm md:text-xl font-semibold">What I Do?</h2>
         <p
-          class="w-full md:max-w-[80%] text-[1.2rem]/[1.8rem] md:text-[1.8rem]/[2rem] lg:text-[2rem]/[3rem] mt-[1rem] md:mt-[1.5rem] lg:mt-[2rem] font-bold"
+          class="w-full md:max-w-[80%] text-[1.2rem]/[1.8rem] md:text-[1.6rem]/[2rem] lg:text-[2rem]/[3rem] mt-[1rem] md:mt-[1.5rem] lg:mt-[2rem] font-bold"
         >
           I write and explain concepts related to technology and education with
           the aim to help you make informed decisions. My goal is to use skills
@@ -127,15 +127,15 @@
 
       <div class="container mx-auto px-4 py-8">
         <h2
-          class="font-bold text-5xl text-center mt-[2rem] mb-[3rem] text-slate-900"
+          class="font-bold text-2xl md:text-4xl lg:text-5xl text-center mt-1 md:mt-2 lg:mt-3 mb-[3rem] text-slate-900"
         >
           Recent Posts
         </h2>
 
         <!-- Custom Navigation Arrows -->
-        <!-- <div class="slider-container">
+        <div class="slider-container">
           <div class="custom-arrow prev">❮</div>
-          <div class="custom-arrow next">❯</div> -->
+          <div class="custom-arrow next">❯</div>
 
           <!-- Slick Carousel Wrapper -->
           <div class="slider-wrapper">
@@ -543,10 +543,12 @@
       </div>
     </section>
     <footer class="text-white bg-indigo-600">
-      <div class="px-8 py-4 flex justify-between">
-        <div class="w-[33%]">
-          <h2 class="text-2xl font-semibold">Follow Us</h2>
-          <div class="flex align-center justify-left gap-6 pt-3 mt-3">
+      <div class="px-8 py-4 flex flex-wrap md:flex-row justify-between">
+        <div class="w-full md:w-80 mb-10">
+          <h2 class="text-xl lg:text-2xl font-semibold">Follow Us</h2>
+          <div
+            class="flex align-center justify-center md:justify-left gap-6 md:gap-4 lg:gap-6 pt-3 mt-3"
+          >
             <a href=""
               ><i
                 class="fa-brands fa-linkedin-in text-2xl p-3 border border-2 border-white rounded-full hover:bg-white hover:text-indigo-500 transition-all duration-400 ease"
@@ -569,9 +571,11 @@
             ></a>
           </div>
         </div>
-        <div class="w-[33%]">
+        <div class="w-full md:w-80 mt-4 md:mt-1">
           <h2 class="text-2xl font-semibold">Quick Links</h2>
-          <ul class="flex flex-col align-center justify-center mt-3 pr-3">
+          <ul
+            class="flex flex-col align-center justify-center md:justify-left mt-3 pr-3"
+          >
             <li>
               <a
                 href=""
@@ -602,25 +606,27 @@
             </li>
           </ul>
         </div>
-        <div class="w-[33%]">
+        <div class="w-full md:w-80 mt-4 md:mt-1">
           <h2 class="text-2xl font-semibold">Subscribe to our Newsletter</h2>
-          <p class="text-[1.2rem] inline-bold">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
-            quia.
-          </p>
-          <form action="/index.html" method="post">
-            <input
-              type="email"
-              placeholder="Enter Email"
-              aria-label="Enter email"
-              class="bg-white px-4 py-2 w-[80%] text-black text-[1.1rem] border-none focus:outline-none"
-            />
-            <input
-              type="submit"
-              value="Submit"
-              class="bg-yellow-500 px-4 py-2 text-indigo-500 font-bold"
-            />
-          </form>
+          <div class="text-center md:text-left">
+            <p class="text-[1.2rem] inline-bold">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
+              quia.
+            </p>
+            <form action="/index.html" method="post" class="relative w-full">
+              <input
+                type="email"
+                placeholder="Enter Email"
+                aria-label="Enter email"
+                class="bg-white px-4 py-2 w-full text-black text-[1.1rem] border-none focus:outline-none"
+              />
+              <button
+                class="absolute right-0 bg-yellow-500 w-[5rem] h-full px-4 py-2 text-indigo-500 font-bold cursor-pointer"
+              >
+                <i class="fa-solid fa-arrow-right text-2xl"></i>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
       <div
