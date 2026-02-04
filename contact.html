@@ -22,108 +22,114 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
-    <nav
-      class="w-full h-[60px] fixed top-0 left-0 md:h-[70px] px-4 md:px-8 flex items-center justify-between bg-indigo-500 text-white shadow-lg z-[999]"
-      aria-label="main navbar"
-    >
-      <!-- logo/brand -->
-      <div class="flex-shrink-0">
-        <a
-          href="?"
-          class="text-xl md:text-2xl lg:text-[2rem] font-bold text-yellow-400 hover:text-yellow-300 transition-colors"
-          >mbiyu<span class="text-white">inspired</span></a
-        >
-      </div>
-      <!-- desktop nav -->
-      <ul
-        class="hidden md:flex items-center px-4 h-full font-semibold space-x-1"
+  <body
+    class="bg-[url(/images/bg.jpg)] bg-cover bg-no-repeat bg-center bg-fixed"
+  >
+    <div>
+      <nav
+        class="w-full h-[60px] md:h-[70px] px-4 md:px-8 flex items-center justify-between bg-transparent text-white z-[999]"
+        aria-label="main navbar"
       >
-        <li class="h-full">
+        <!-- logo/brand -->
+        <div class="flex-shrink-0">
           <a
-            class="inline-flex items-center px-4 h-full text-[1.1rem] transition-all duration-300 ease hover:text-yellow-400 rounded-t-lg"
-            href="index.html"
-            >Home</a
+            href="?"
+            class="text-xl md:text-2xl lg:text-[2rem] font-bold text-yellow-400 hover:text-yellow-300 transition-colors"
+            >mbiyu<span class="text-white">inspired</span></a
           >
-        </li>
-        <li class="group h-full relative">
+        </div>
+        <!-- desktop nav -->
+        <ul
+          class="hidden md:flex items-center px-4 h-full font-semibold space-x-1"
+        >
+          <li class="h-full">
+            <a
+              class="inline-flex items-center px-4 h-full text-[1.1rem] transition-all duration-300 ease hover:text-yellow-400 rounded-t-lg border-b-3 border-transparent hover:border-b-3 hover:border-yellow-500"
+              href="index.html"
+              >Home</a
+            >
+          </li>
+          <li class="group h-full relative">
+            <span
+              class="inline-flex items-center px-4 h-full text-[1.1rem] transition-all duration-300 ease hover:text-yellow-400 rounded-t-lg"
+              >Articles
+              <i class="fa-solid fa-chevron-down pl-[5px] text-[1rem]"></i
+            ></span>
+            <ul
+              class="hidden border-t border-t-3 bg-transparent backdrop-blur-lg border-t-yellow-500 w-[250px] absolute group-hover:block transition-all duration-300 ease"
+            >
+              <li class="my-[1rem] ml-[10px] px-4">
+                <a
+                  href="blogs.html"
+                  class="text-[1.1rem] hover:text-yellow-400 transition-all duration-300 ease"
+                  >Technology</a
+                >
+              </li>
+              <li class="my-[1rem] ml-[10px] px-4">
+                <a
+                  href="blogs.html"
+                  class="text-[1.1rem] hover:text-yellow-400 transition-all duration-300 ease"
+                  >Education</a
+                >
+              </li>
+              <li class="my-[1rem] ml-[10px] px-4">
+                <a
+                  href=""
+                  class="text-[1.1rem] hover:text-yellow-400 transition-all duration-300 ease"
+                  >Trending</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="h-full">
+            <a
+              class="inline-flex items-center px-4 h-full text-[1.1rem] transition-all duration-300 ease hover:text-yellow-400 rounded-t-lg border-b-3 border-transparent hover:border-b-3 hover:border-yellow-500"
+              href="services.html"
+              >Services</a
+            >
+          </li>
+          <li class="h-full">
+            <a
+              class="inline-flex items-center px-4 h-full text-[1.1rem] transition-all duration-300 ease hover:text-yellow-400 rounded-t-lg border-b-3 border-transparent hover:border-b-3 hover:border-yellow-500"
+              href="about.html"
+              >About</a
+            >
+          </li>
+          <li class="h-full">
+            <a
+              class="inline-flex items-center px-4 h-full text-[1.1rem] transition-all duration-300 ease hover:text-yellow-400 rounded-t-lg border-b-3 border-transparent hover:border-b-3 hover:border-yellow-500"
+              href="contact.html"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <!-- login button -->
+        <div>
           <a
-            class="inline-flex items-center px-4 h-full text-[1.1rem] transition-all duration-300 ease hover:text-yellow-400 rounded-t-lg"
-            href="blogs.html"
-            >Articles
-            <i class="fa-solid fa-chevron-down pl-[5px] text-[1rem]"></i
+            href="#"
+            class="hidden md:flex md:text-sm lg:text-xl font-semibold hover:text-indigo-500 rounded-full hover:bg-yellow-500 border border-solid border-2 border-white hover:border-yellow-500 transition-colors duration-300 ease p-[7px]"
+            ><i class="fa-solid fa-arrow-right text-[1rem]"></i
           ></a>
-          <ul
-            class="hidden border-t border-t-3 bg-indigo-500 border-t-yellow-500 w-[250px] absolute group-hover:block transition-all duration-300 ease"
-          >
-            <li class="my-[1rem] ml-[10px]">
-              <a
-                href=""
-                class="text-[1.1rem] hover:text-yellow-400 transition-all duration-300 ease"
-                >Technology</a
-              >
-            </li>
-            <li class="my-[1rem] ml-[10px]">
-              <a
-                href=""
-                class="text-[1.1rem] hover:text-yellow-400 transition-all duration-300 ease"
-                >Education</a
-              >
-            </li>
-            <li class="my-[1rem] ml-[10px]">
-              <a
-                href=""
-                class="text-[1.1rem] hover:text-yellow-400 transition-all duration-300 ease"
-                >Trending</a
-              >
-            </li>
-          </ul>
-        </li>
-        <li class="h-full">
-          <a
-            class="inline-flex items-center px-4 h-full text-[1.1rem] transition-all duration-300 ease hover:text-yellow-400 rounded-t-lg"
-            href="services.html"
-            >Services</a
-          >
-        </li>
-        <li class="h-full">
-          <a
-            class="inline-flex items-center px-4 h-full text-[1.1rem] transition-all duration-300 ease hover:text-yellow-400 rounded-t-lg"
-            href="about.html"
-            >About</a
-          >
-        </li>
-        <li class="h-full">
-          <a
-            class="inline-flex items-center px-4 h-full text-[1.1rem] transition-all duration-300 ease hover:text-yellow-400 rounded-t-lg"
-            href="contact.html"
-            >Contact</a
-          >
-        </li>
-      </ul>
-      <!-- login button -->
-      <div>
-        <a
-          href="#"
-          class="hidden md:flex md:text-sm lg:text-xl font-semibold hover:text-indigo-500 rounded-full hover:bg-yellow-500 border border-solid border-2 border-white hover:border-yellow-500 transition-colors duration-300 ease p-[7px]"
-          ><i class="fa-solid fa-arrow-right text-[1rem]"></i
-        ></a>
+        </div>
+        <div class="md:hidden">
+          <i class="fa-solid fa-bars text-2xl cursor-pointer"></i>
+        </div>
+      </nav>
+      <div class="text-white py-3">
+        <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold my-8 text-center">
+          Contacts
+        </h2>
       </div>
-      <div class="md:hidden">
-        <i class="fa-solid fa-bars text-2xl cursor-pointer"></i>
-      </div>
-    </nav>
-    <section class="pt-[60px] md:pt-[70px] h-full px-8">
-      <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold my-4 text-center">
-        Contacts
-      </h2>
+    </div>
+
+    <section class="h-full px-8 py-8 bg-blue-100">
       <div>
         <p class="text-center font-semibold text-xl md:text-2xl">
           Use the contact form below. I typically reply within 24 hours
         </p>
         <form
           method="post"
-          class="border border-indigo-200 w-full max-w-[50rem] mx-auto my-16 p-12 rounded-[5px]"
+          class="border border-indigo-300 border-3 w-full max-w-[50rem] mx-auto my-8 p-12 rounded-[5px]"
         >
           <div class="flex align-center flex-col md:flex-row gap-4">
             <div class="w-full md:w-[50%]">
@@ -165,7 +171,7 @@
             <textarea
               name="message"
               id="message"
-              class="w-full h-24 border-2 border-indigo-100 p-[8px] text-[1rem] focus:outline-none rounded-[5px] bg-indigo-50"
+              class="w-full h-24 border-2 border-indigo-100 p-[8px] text-[1rem] focus:outline-none rounded-[5px] bg-indigo-50 resize-none"
             ></textarea>
           </div>
           <button
@@ -177,7 +183,7 @@
       </div>
     </section>
 
-    <footer class="text-white bg-indigo-600">
+    <footer class="text-white bg-transparent">
       <div class="px-8 py-4 flex flex-wrap md:flex-row justify-between">
         <div class="w-full md:w-80 mb-10">
           <h2 class="text-xl lg:text-2xl font-semibold">Follow Us</h2>
@@ -265,7 +271,7 @@
         </div>
       </div>
       <div
-        class="px-8 text-center text-[1.1rem] font-bold py-2 bg-indigo-800 text-white"
+        class="px-8 text-center text-[1.1rem] font-bold py-2 bg-transparent text-white"
       >
         Copyright &copy; 2026 mbiyuInspired | Powered by Mbiyu Design
       </div>
