@@ -22,162 +22,340 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body class="bg-[url(/images/bg.jpg)]">
-    <nav
-      class="w-full h-[60px] fixed top-0 left-0 md:h-[70px] px-4 md:px-8 flex items-center justify-between bg-indigo-500 text-white shadow-lg z-[999]"
-      aria-label="main navbar"
-    >
-      <!-- logo/brand -->
-      <div class="flex-shrink-0">
-        <a
-          href="?"
-          class="text-xl md:text-2xl lg:text-[2rem] font-bold text-yellow-400 hover:text-yellow-300 transition-colors"
-          >mbiyu<span class="text-white">inspired</span></a
-        >
-      </div>
-      <!-- desktop nav -->
-      <ul
-        class="hidden md:flex items-center px-4 h-full font-semibold space-x-1"
+  <body
+    class="bg-[url(/images/bg.jpg)] bg-cover bg-no-repeat bg-center bg-fixed"
+  >
+    <!-- nav and intro -->
+    <div>
+      <nav
+        class="w-full h-[60px] md:h-[70px] px-4 md:px-8 flex items-center justify-between bg-transparent text-white z-[999]"
+        aria-label="main navbar"
       >
-        <li class="h-full">
+        <!-- logo/brand -->
+        <div class="flex-shrink-0">
           <a
-            class="inline-flex items-center px-4 h-full text-[1.1rem] transition-all duration-300 ease hover:text-yellow-400 rounded-t-lg"
-            href="index.html"
-            >Home</a
+            href="?"
+            class="text-xl md:text-2xl lg:text-[2rem] font-bold text-yellow-400 hover:text-yellow-300 transition-colors"
+            >mbiyu<span class="text-white">inspired</span></a
           >
-        </li>
-        <li class="group h-full relative">
-          <a
-            class="inline-flex items-center px-4 h-full text-[1.1rem] transition-all duration-300 ease hover:text-yellow-400 rounded-t-lg"
-            href="blogs.html"
-            >Articles
-            <i class="fa-solid fa-chevron-down pl-[5px] text-[1rem]"></i
-          ></a>
-          <ul
-            class="hidden border-t border-t-3 bg-indigo-500 border-t-yellow-500 w-[250px] absolute group-hover:block transition-all duration-300 ease"
-          >
-            <li class="my-[1rem] ml-[10px]">
-              <a
-                href=""
-                class="text-[1.1rem] hover:text-yellow-400 transition-all duration-300 ease"
-                >Technology</a
-              >
-            </li>
-            <li class="my-[1rem] ml-[10px]">
-              <a
-                href=""
-                class="text-[1.1rem] hover:text-yellow-400 transition-all duration-300 ease"
-                >Education</a
-              >
-            </li>
-            <li class="my-[1rem] ml-[10px]">
-              <a
-                href=""
-                class="text-[1.1rem] hover:text-yellow-400 transition-all duration-300 ease"
-                >Trending</a
-              >
-            </li>
-          </ul>
-        </li>
-        <li class="h-full">
-          <a
-            class="inline-flex items-center px-4 h-full text-[1.1rem] transition-all duration-300 ease hover:text-yellow-400 rounded-t-lg"
-            href="services.html"
-            >Services</a
-          >
-        </li>
-        <li class="h-full">
-          <a
-            class="inline-flex items-center px-4 h-full text-[1.1rem] transition-all duration-300 ease hover:text-yellow-400 rounded-t-lg"
-            href="about.html"
-            >About</a
-          >
-        </li>
-        <li class="h-full">
-          <a
-            class="inline-flex items-center px-4 h-full text-[1.1rem] transition-all duration-300 ease hover:text-yellow-400 rounded-t-lg"
-            href="contact.html"
-            >Contact</a
-          >
-        </li>
-      </ul>
-      <!-- login button -->
-      <div>
-        <a
-          href="#"
-          class="hidden md:flex md:text-sm lg:text-xl font-semibold hover:text-indigo-500 rounded-full hover:bg-yellow-500 border border-solid border-2 border-white hover:border-yellow-500 transition-colors duration-300 ease p-[7px]"
-          ><i class="fa-solid fa-arrow-right text-[1rem]"></i
-        ></a>
-      </div>
-      <div class="md:hidden">
-        <i class="fa-solid fa-bars text-2xl cursor-pointer"></i>
-      </div>
-    </nav>
-    <section class="pt-[60px] md:pt-[70px] h-full px-8">
-      <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold my-4 text-center">
-        Contacts
-      </h2>
-      <div>
-        <p class="text-center font-semibold text-xl md:text-2xl">
-          Use the contact form below. I typically reply within 24 hours
-        </p>
-        <form
-          method="post"
-          class="border border-indigo-100 border-3 w-full max-w-[50rem] mx-auto my-16 p-12 rounded-[5px]"
+        </div>
+        <!-- desktop nav -->
+        <ul
+          class="hidden md:flex items-center px-4 h-full font-semibold space-x-1"
         >
-          <div class="flex align-center flex-col md:flex-row gap-4">
-            <div class="w-full md:w-[50%]">
-              <label for="first-name" class="text-[1.2rem]"
-                >First Name <span class="text-red-500">*</span></label
-              ><br />
-              <input
-                type="text"
-                name="first-name"
-                id="first-name"
-                class="w-full border-2 border-indigo-100 p-[8px] text-[1rem] focus:outline-none rounded-[5px] bg-indigo-50"
-              />
-            </div>
-            <div class="w-full md:w-[50%]">
-              <label for="last-name" class="text-[1.2rem]"
-                >Last Name <span class="text-red-500">*</span></label
-              ><br />
-              <input
-                type="text"
-                name="last-name"
-                id="last-name"
-                class="w-full border-2 border-indigo-100 p-[8px] text-[1rem] focus:outline-none rounded-[5px] bg-indigo-50"
-              />
-            </div>
-          </div>
-          <div class="w-full mt-4">
-            <label for="email" class="text-[1.2rem]"
-              >Email <span class="text-red-500">*</span></label
+          <li class="h-full">
+            <a
+              class="inline-flex items-center px-4 h-full text-[1.1rem] transition-all duration-300 ease hover:text-yellow-400 rounded-t-lg border-b-3 border-transparent hover:border-b-3 hover:border-yellow-500"
+              href="index.html"
+              >Home</a
             >
-            <input
-              type="email"
-              name="email"
-              id="email"
-              class="w-full border-2 border-indigo-100 p-[8px] text-[1rem] focus:outline-none rounded-[5px] bg-indigo-50"
-            />
-          </div>
-          <div class="w-full mt-4">
-            <label for="message">Message</label><br />
-            <textarea
-              name="message"
-              id="message"
-              class="w-full h-24 border-2 border-indigo-100 p-[8px] text-[1rem] focus:outline-none rounded-[5px] bg-indigo-50 resize-none"
-            ></textarea>
-          </div>
-          <button
-            class="py-3 px-6 bg-indigo-500 text-white font-bold rounded-[3px] mt-4 cursor-pointer hover:text-yellow-500 transition-all duration-300 ease"
+          </li>
+          <li class="group h-full relative">
+            <span
+              class="inline-flex items-center px-4 h-full text-[1.1rem] transition-all duration-300 ease hover:text-yellow-400 rounded-t-lg"
+              >Articles
+              <i class="fa-solid fa-chevron-down pl-[5px] text-[1rem]"></i
+            ></span>
+            <ul
+              class="hidden border-t border-t-3 bg-transparent backdrop-blur-lg border-t-yellow-500 w-[250px] absolute group-hover:block transition-all duration-300 ease"
+            >
+              <li class="my-[1rem] ml-[10px] px-4">
+                <a
+                  href="blogs.html"
+                  class="text-[1.1rem] hover:text-yellow-400 transition-all duration-300 ease"
+                  >Technology</a
+                >
+              </li>
+              <li class="my-[1rem] ml-[10px] px-4">
+                <a
+                  href="blogs.html"
+                  class="text-[1.1rem] hover:text-yellow-400 transition-all duration-300 ease"
+                  >Education</a
+                >
+              </li>
+              <li class="my-[1rem] ml-[10px] px-4">
+                <a
+                  href=""
+                  class="text-[1.1rem] hover:text-yellow-400 transition-all duration-300 ease"
+                  >Trending</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="h-full">
+            <a
+              class="inline-flex items-center px-4 h-full text-[1.1rem] transition-all duration-300 ease hover:text-yellow-400 rounded-t-lg border-b-3 border-transparent hover:border-b-3 hover:border-yellow-500"
+              href="services.html"
+              >Services</a
+            >
+          </li>
+          <li class="h-full">
+            <a
+              class="inline-flex items-center px-4 h-full text-[1.1rem] transition-all duration-300 ease hover:text-yellow-400 rounded-t-lg border-b-3 border-transparent hover:border-b-3 hover:border-yellow-500"
+              href="about.html"
+              >About</a
+            >
+          </li>
+          <li class="h-full">
+            <a
+              class="inline-flex items-center px-4 h-full text-[1.1rem] transition-all duration-300 ease hover:text-yellow-400 rounded-t-lg border-b-3 border-transparent hover:border-b-3 hover:border-yellow-500"
+              href="contact.html"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <!-- login button -->
+        <div>
+          <a
+            href="#"
+            class="hidden md:flex md:text-sm lg:text-xl font-semibold hover:text-indigo-500 rounded-full hover:bg-yellow-500 border border-solid border-2 border-white hover:border-yellow-500 transition-colors duration-300 ease p-[7px]"
+            ><i class="fa-solid fa-arrow-right text-[1rem]"></i
+          ></a>
+        </div>
+        <div class="md:hidden">
+          <i class="fa-solid fa-bars text-2xl cursor-pointer"></i>
+        </div>
+      </nav>
+      <div class="text-white py-3">
+        <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold my-8 text-center">
+          Deals and Services
+        </h2>
+      </div>
+    </div>
+    <section class="pt-[60px] md:pt-[70px] h-full px-8 bg-white">
+      <div class="mt-[1rem] md:mt-[2rem]">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 justify-items-center"
+        >
+          <div
+            class="group w-full max-w-[350px] md:max-w-full shadow-[0px_5px_10px_rgba(0,0,0,0.25)] mb-[2rem] overflow-hidden cursor-pointer transition-transform duration-300 hover:scale-[1.02] rounded-[3px]"
           >
-            Submit
-          </button>
-        </form>
+            <div class="relative h-[250px] md:h-[300px] object-cover">
+              <img
+                src="./images/acad01.jpeg"
+                alt="slide-show"
+                class="w-full h-[300px]"
+              />
+              <div
+                class="p-[1rem] text-center absolute top-[-100%] group-hover:top-0 bg-linear-to-b from-indigo-500 to-transparent h-[300px] flex flex-col align-center justify-center text-white transition-all ease-out duration-500"
+              >
+                <h3
+                  class="text-xl font-semibold tracking-wider mb-[0.8rem] text-yellow-500 text-shadow-[2px_2px_10px_rgba(0,0,0,0.5)]"
+                >
+                  Web Design
+                </h3>
+                <h2 class="text-2xl font-bold text-2xl">
+                  Get a stunning website that is professionally done.
+                </h2>
+                <div class="mt-[1rem]">
+                  <i
+                    class="fa-solid fa-arrow-up-right-from-square text-indigo-500 font-bold bg-white text-xl inline-flex border border-3 border-white p-3 rounded-full"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="group w-full max-w-[350px] md:max-w-full shadow-[0px_5px_10px_rgba(0,0,0,0.25)] mb-[2rem] overflow-hidden cursor-pointer transition-transform duration-300 hover:scale-[1.02] rounded-[3px]"
+          >
+            <div class="relative h-[250px] md:h-[300px] object-cover">
+              <img
+                src="./images/acad01.jpeg"
+                alt="slide-show"
+                class="w-full h-[300px]"
+              />
+              <div
+                class="p-[1rem] text-center absolute top-[-100%] group-hover:top-0 bg-linear-to-b from-indigo-500 to-transparent h-[300px] flex flex-col align-center justify-center text-white transition-all ease-out duration-500"
+              >
+                <h3
+                  class="text-xl font-semibold tracking-wider mb-[0.8rem] text-yellow-500 text-shadow-[2px_2px_10px_rgba(0,0,0,0.5)]"
+                >
+                  Web Design
+                </h3>
+                <h2 class="text-2xl font-bold text-2xl">
+                  Get a stunning website that is professionally done.
+                </h2>
+                <div class="mt-[1rem]">
+                  <i
+                    class="fa-solid fa-arrow-up-right-from-square text-indigo-500 font-bold bg-white text-xl inline-flex border border-3 border-white p-3 rounded-full"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="group w-full max-w-[350px] md:max-w-full shadow-[0px_5px_10px_rgba(0,0,0,0.25)] mb-[2rem] overflow-hidden cursor-pointer transition-transform duration-300 hover:scale-[1.02] rounded-[3px]"
+          >
+            <div class="relative h-[250px] md:h-[300px] object-cover">
+              <img
+                src="./images/acad01.jpeg"
+                alt="slide-show"
+                class="w-full h-[300px]"
+              />
+              <div
+                class="p-[1rem] text-center absolute top-[-100%] group-hover:top-0 bg-linear-to-b from-indigo-500 to-transparent h-[300px] flex flex-col align-center justify-center text-white transition-all ease-out duration-500"
+              >
+                <h3
+                  class="text-xl font-semibold tracking-wider mb-[0.8rem] text-yellow-500 text-shadow-[2px_2px_10px_rgba(0,0,0,0.5)]"
+                >
+                  Web Design
+                </h3>
+                <h2 class="text-2xl font-bold text-2xl">
+                  Get a stunning website that is professionally done.
+                </h2>
+                <div class="mt-[1rem]">
+                  <i
+                    class="fa-solid fa-arrow-up-right-from-square text-indigo-500 font-bold bg-white text-xl inline-flex border border-3 border-white p-3 rounded-full"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="group w-full max-w-[350px] md:max-w-full shadow-[0px_5px_10px_rgba(0,0,0,0.25)] mb-[2rem] overflow-hidden cursor-pointer transition-transform duration-300 hover:scale-[1.02] rounded-[3px]"
+          >
+            <div class="relative h-[250px] md:h-[300px] object-cover">
+              <img
+                src="./images/acad01.jpeg"
+                alt="slide-show"
+                class="w-full h-[300px]"
+              />
+              <div
+                class="p-[1rem] text-center absolute top-[-100%] group-hover:top-0 bg-linear-to-b from-indigo-500 to-transparent h-[300px] flex flex-col align-center justify-center text-white transition-all ease-out duration-500"
+              >
+                <h3
+                  class="text-xl font-semibold tracking-wider mb-[0.8rem] text-yellow-500 text-shadow-[2px_2px_10px_rgba(0,0,0,0.5)]"
+                >
+                  Web Design
+                </h3>
+                <h2 class="text-2xl font-bold text-2xl">
+                  Get a stunning website that is professionally done.
+                </h2>
+                <div class="mt-[1rem]">
+                  <i
+                    class="fa-solid fa-arrow-up-right-from-square text-indigo-500 font-bold bg-white text-xl inline-flex border border-3 border-white p-3 rounded-full"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="group w-full max-w-[350px] md:max-w-full shadow-[0px_5px_10px_rgba(0,0,0,0.25)] mb-[2rem] overflow-hidden cursor-pointer transition-transform duration-300 hover:scale-[1.02] rounded-[3px]"
+          >
+            <div class="relative h-[250px] md:h-[300px] object-cover">
+              <img
+                src="./images/acad01.jpeg"
+                alt="slide-show"
+                class="w-full h-[300px]"
+              />
+              <div
+                class="p-[1rem] text-center absolute top-[-100%] group-hover:top-0 bg-linear-to-b from-indigo-500 to-transparent h-[300px] flex flex-col align-center justify-center text-white transition-all ease-out duration-500"
+              >
+                <h3
+                  class="text-xl font-semibold tracking-wider mb-[0.8rem] text-yellow-500 text-shadow-[2px_2px_10px_rgba(0,0,0,0.5)]"
+                >
+                  Web Design
+                </h3>
+                <h2 class="text-2xl font-bold text-2xl">
+                  Get a stunning website that is professionally done.
+                </h2>
+                <div class="mt-[1rem]">
+                  <i
+                    class="fa-solid fa-arrow-up-right-from-square text-indigo-500 font-bold bg-white text-xl inline-flex border border-3 border-white p-3 rounded-full"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="group w-full max-w-[350px] md:max-w-full shadow-[0px_5px_10px_rgba(0,0,0,0.25)] mb-[2rem] overflow-hidden cursor-pointer transition-transform duration-300 hover:scale-[1.02] rounded-[3px]"
+          >
+            <div class="relative h-[250px] md:h-[300px] object-cover">
+              <img
+                src="./images/acad01.jpeg"
+                alt="slide-show"
+                class="w-full h-[300px]"
+              />
+              <div
+                class="p-[1rem] text-center absolute top-[-100%] group-hover:top-0 bg-linear-to-b from-indigo-500 to-transparent h-[300px] flex flex-col align-center justify-center text-white transition-all ease-out duration-500"
+              >
+                <h3
+                  class="text-xl font-semibold tracking-wider mb-[0.8rem] text-yellow-500 text-shadow-[2px_2px_10px_rgba(0,0,0,0.5)]"
+                >
+                  Web Design
+                </h3>
+                <h2 class="text-2xl font-bold text-2xl">
+                  Get a stunning website that is professionally done.
+                </h2>
+                <div class="mt-[1rem]">
+                  <i
+                    class="fa-solid fa-arrow-up-right-from-square text-indigo-500 font-bold bg-white text-xl inline-flex border border-3 border-white p-3 rounded-full"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="group w-full max-w-[350px] md:max-w-full shadow-[0px_5px_10px_rgba(0,0,0,0.25)] mb-[2rem] overflow-hidden cursor-pointer transition-transform duration-300 hover:scale-[1.02] rounded-[3px]"
+          >
+            <div class="relative h-[250px] md:h-[300px] object-cover">
+              <img
+                src="./images/acad01.jpeg"
+                alt="slide-show"
+                class="w-full h-[300px]"
+              />
+              <div
+                class="p-[1rem] text-center absolute top-[-100%] group-hover:top-0 bg-linear-to-b from-indigo-500 to-transparent h-[300px] flex flex-col align-center justify-center text-white transition-all ease-out duration-500"
+              >
+                <h3
+                  class="text-xl font-semibold tracking-wider mb-[0.8rem] text-yellow-500 text-shadow-[2px_2px_10px_rgba(0,0,0,0.5)]"
+                >
+                  Web Design
+                </h3>
+                <h2 class="text-2xl font-bold text-2xl">
+                  Get a stunning website that is professionally done.
+                </h2>
+                <div class="mt-[1rem]">
+                  <i
+                    class="fa-solid fa-arrow-up-right-from-square text-indigo-500 font-bold bg-white text-xl inline-flex border border-3 border-white p-3 rounded-full"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="group w-full max-w-[350px] md:max-w-full shadow-[0px_5px_10px_rgba(0,0,0,0.25)] mb-[2rem] overflow-hidden cursor-pointer transition-transform duration-300 hover:scale-[1.02] rounded-[3px]"
+          >
+            <div class="relative h-[250px] md:h-[300px] object-cover">
+              <img
+                src="./images/acad01.jpeg"
+                alt="slide-show"
+                class="w-full h-[300px]"
+              />
+              <div
+                class="p-[1rem] text-center absolute top-[-100%] group-hover:top-0 bg-linear-to-b from-indigo-500 to-transparent h-[300px] flex flex-col align-center justify-center text-white transition-all ease-out duration-500"
+              >
+                <h3
+                  class="text-xl font-semibold tracking-wider mb-[0.8rem] text-yellow-500 text-shadow-[2px_2px_10px_rgba(0,0,0,0.5)]"
+                >
+                  Web Design
+                </h3>
+                <h2 class="text-2xl font-bold text-2xl">
+                  Get a stunning website that is professionally done.
+                </h2>
+                <div class="mt-[1rem]">
+                  <i
+                    class="fa-solid fa-arrow-up-right-from-square text-indigo-500 font-bold bg-white text-xl inline-flex border border-3 border-white p-3 rounded-full"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <footer class="text-white bg-indigo-600">
+    <footer class="text-white bg-transparent">
       <div class="px-8 py-4 flex flex-wrap md:flex-row justify-between">
         <div class="w-full md:w-80 mb-10">
           <h2 class="text-xl lg:text-2xl font-semibold">Follow Us</h2>
@@ -265,7 +443,7 @@
         </div>
       </div>
       <div
-        class="px-8 text-center text-[1.1rem] font-bold py-2 bg-indigo-800 text-white"
+        class="px-8 text-center text-[1.1rem] font-bold py-2 bg-blue-900 text-white"
       >
         Copyright &copy; 2026 mbiyuInspired | Powered by Mbiyu Design
       </div>

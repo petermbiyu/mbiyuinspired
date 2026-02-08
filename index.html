@@ -25,98 +25,101 @@
   <body
     class="bg-[url(/images/bg.jpg)] bg-cover bg-no-repeat bg-center bg-fixed"
   >
-    <nav
-      class="w-full h-[60px] md:h-[70px] px-4 md:px-8 flex items-center justify-between bg-transparent text-white z-[999]"
-      aria-label="main navbar"
-    >
-      <!-- logo/brand -->
-      <div class="flex-shrink-0">
-        <a
-          href="?"
-          class="text-xl md:text-2xl lg:text-[2rem] font-bold text-yellow-400 hover:text-yellow-300 transition-colors"
-          >mbiyu<span class="text-white">inspired</span></a
-        >
-      </div>
-      <!-- desktop nav -->
-      <ul
-        class="hidden md:flex items-center px-4 h-full font-semibold space-x-1"
+    <div>
+      <nav
+        class="w-full h-[60px] md:h-[70px] px-4 md:px-8 flex items-center justify-between bg-transparent text-white z-[999]"
+        aria-label="main navbar"
       >
-        <li class="h-full">
+        <!-- logo/brand -->
+        <div class="flex-shrink-0">
           <a
-            class="inline-flex items-center px-4 h-full text-[1.1rem] transition-all duration-300 ease hover:text-yellow-400 rounded-t-lg"
-            href="index.html"
-            >Home</a
+            href="?"
+            class="text-xl md:text-2xl lg:text-[2rem] font-bold text-yellow-400 hover:text-yellow-300 transition-colors"
+            >mbiyu<span class="text-white">inspired</span></a
           >
-        </li>
-        <li class="group h-full relative">
+        </div>
+        <!-- desktop nav -->
+        <ul
+          class="hidden md:flex items-center px-4 h-full font-semibold space-x-1"
+        >
+          <li class="h-full">
+            <a
+              class="inline-flex items-center px-4 h-full text-[1.1rem] transition-all duration-300 ease hover:text-yellow-400 rounded-t-lg border-b-3 border-transparent hover:border-b-3 hover:border-yellow-500"
+              href="index.html"
+              >Home</a
+            >
+          </li>
+          <li class="group h-full relative">
+            <span
+              class="inline-flex items-center px-4 h-full text-[1.1rem] transition-all duration-300 ease hover:text-yellow-400 rounded-t-lg"
+              >Articles
+              <i class="fa-solid fa-chevron-down pl-[5px] text-[1rem]"></i
+            ></span>
+            <ul
+              class="hidden border-t border-t-3 bg-transparent backdrop-blur-lg border-t-yellow-500 w-[250px] absolute group-hover:block transition-all duration-300 ease"
+            >
+              <li class="my-[1rem] ml-[10px] px-4">
+                <a
+                  href="blogs.html"
+                  class="text-[1.1rem] hover:text-yellow-400 transition-all duration-300 ease"
+                  >Technology</a
+                >
+              </li>
+              <li class="my-[1rem] ml-[10px] px-4">
+                <a
+                  href="blogs.html"
+                  class="text-[1.1rem] hover:text-yellow-400 transition-all duration-300 ease"
+                  >Education</a
+                >
+              </li>
+              <li class="my-[1rem] ml-[10px] px-4">
+                <a
+                  href=""
+                  class="text-[1.1rem] hover:text-yellow-400 transition-all duration-300 ease"
+                  >Trending</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="h-full">
+            <a
+              class="inline-flex items-center px-4 h-full text-[1.1rem] transition-all duration-300 ease hover:text-yellow-400 rounded-t-lg border-b-3 border-transparent hover:border-b-3 hover:border-yellow-500"
+              href="services.html"
+              >Services</a
+            >
+          </li>
+          <li class="h-full">
+            <a
+              class="inline-flex items-center px-4 h-full text-[1.1rem] transition-all duration-300 ease hover:text-yellow-400 rounded-t-lg border-b-3 border-transparent hover:border-b-3 hover:border-yellow-500"
+              href="about.html"
+              >About</a
+            >
+          </li>
+          <li class="h-full">
+            <a
+              class="inline-flex items-center px-4 h-full text-[1.1rem] transition-all duration-300 ease hover:text-yellow-400 rounded-t-lg border-b-3 border-transparent hover:border-b-3 hover:border-yellow-500"
+              href="contact.html"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <!-- login button -->
+        <div>
           <a
-            class="inline-flex items-center px-4 h-full text-[1.1rem] transition-all duration-300 ease hover:text-yellow-400 rounded-t-lg"
-            href="blogs.html"
-            >Articles
-            <i class="fa-solid fa-chevron-down pl-[5px] text-[1rem]"></i
+            href="#"
+            class="hidden md:flex md:text-sm lg:text-xl font-semibold hover:text-indigo-500 rounded-full hover:bg-yellow-500 border border-solid border-2 border-white hover:border-yellow-500 transition-colors duration-300 ease p-[7px]"
+            ><i class="fa-solid fa-arrow-right text-[1rem]"></i
           ></a>
-          <ul
-            class="hidden border-t border-t-3 bg-indigo-500 border-t-yellow-500 w-[250px] absolute group-hover:block transition-all duration-300 ease"
-          >
-            <li class="my-[1rem] ml-[10px]">
-              <a
-                href=""
-                class="text-[1.1rem] hover:text-yellow-400 transition-all duration-300 ease"
-                >Technology</a
-              >
-            </li>
-            <li class="my-[1rem] ml-[10px]">
-              <a
-                href=""
-                class="text-[1.1rem] hover:text-yellow-400 transition-all duration-300 ease"
-                >Education</a
-              >
-            </li>
-            <li class="my-[1rem] ml-[10px]">
-              <a
-                href=""
-                class="text-[1.1rem] hover:text-yellow-400 transition-all duration-300 ease"
-                >Trending</a
-              >
-            </li>
-          </ul>
-        </li>
-        <li class="h-full">
-          <a
-            class="inline-flex items-center px-4 h-full text-[1.1rem] transition-all duration-300 ease hover:text-yellow-400 rounded-t-lg"
-            href="services.html"
-            >Services</a
-          >
-        </li>
-        <li class="h-full">
-          <a
-            class="inline-flex items-center px-4 h-full text-[1.1rem] transition-all duration-300 ease hover:text-yellow-400 rounded-t-lg"
-            href="about.html"
-            >About</a
-          >
-        </li>
-        <li class="h-full">
-          <a
-            class="inline-flex items-center px-4 h-full text-[1.1rem] transition-all duration-300 ease hover:text-yellow-400 rounded-t-lg"
-            href="contact.html"
-            >Contact</a
-          >
-        </li>
-      </ul>
-      <!-- login button -->
-      <div>
-        <a
-          href="#"
-          class="hidden md:flex md:text-sm lg:text-xl font-semibold hover:text-indigo-500 rounded-full hover:bg-yellow-500 border border-solid border-2 border-white hover:border-yellow-500 transition-colors duration-300 ease p-[7px]"
-          ><i class="fa-solid fa-arrow-right text-[1rem]"></i
-        ></a>
-      </div>
-      <div class="md:hidden">
-        <i class="fa-solid fa-bars text-2xl cursor-pointer"></i>
-      </div>
-    </nav>
-    <section class="pt-[60px] md:pt-[70px] h-full px-8 text-white">
-      <div class="mt-[1rem] md:mt-[2rem]">
+        </div>
+        <div class="md:hidden">
+          <i class="fa-solid fa-bars text-2xl cursor-pointer"></i>
+        </div>
+      </nav>
+      <!-- intro -->
+
+      <div
+        class="pt-[60px] md:pt-[70px] h-full px-8 text-white mt-[1rem] md:mt-[2rem]"
+      >
         <h2 class="text-sm md:text-xl font-semibold">What I Do?</h2>
         <p
           class="w-full md:max-w-[80%] text-[1.2rem]/[1.8rem] md:text-[1.6rem]/[2rem] lg:text-[2rem]/[3rem] mt-[1rem] md:my-[1.5rem] lg:mt-[2rem] font-bold"
@@ -126,7 +129,9 @@
           skill and experience in these two fields with you.
         </p>
       </div>
-    </section>
+    </div>
+
+    <!-- slider: recent posts -->
     <section class="bg-white">
       <div class="container mx-auto px-4 py-8">
         <h2
@@ -328,7 +333,7 @@
                 class="w-full h-[300px]"
               />
               <div
-                class="p-[1rem] text-center absolute top-[-100%] group-hover:top-0 bg-linear-to-b from-indigo-500 to-transparent h-[300px] flex flex-col align-center justify-center text-white transition-all ease-out duration-500"
+                class="p-[1rem] text-center absolute top-[-100%] group-hover:top-0 bg-linear-to-b from-cyan-500 to-transparent h-[300px] flex flex-col align-center justify-center text-white transition-all ease-out duration-500"
               >
                 <h3
                   class="text-xl font-semibold tracking-wider mb-[0.8rem] text-yellow-500 text-shadow-[2px_2px_10px_rgba(0,0,0,0.5)]"
@@ -356,7 +361,7 @@
                 class="w-full h-[300px]"
               />
               <div
-                class="p-[1rem] text-center absolute top-[-100%] group-hover:top-0 bg-linear-to-b from-indigo-500 to-transparent h-[300px] flex flex-col align-center justify-center text-white transition-all ease-out duration-500"
+                class="p-[1rem] text-center absolute top-[-100%] group-hover:top-0 bg-linear-to-b from-cyan-500 to-transparent h-[300px] flex flex-col align-center justify-center text-white transition-all ease-out duration-500"
               >
                 <h3
                   class="text-xl font-semibold tracking-wider mb-[0.8rem] text-yellow-500 text-shadow-[2px_2px_10px_rgba(0,0,0,0.5)]"
@@ -384,7 +389,7 @@
                 class="w-full h-[300px]"
               />
               <div
-                class="p-[1rem] text-center absolute top-[-100%] group-hover:top-0 bg-linear-to-b from-indigo-500 to-transparent h-[300px] flex flex-col align-center justify-center text-white transition-all ease-out duration-500"
+                class="p-[1rem] text-center absolute top-[-100%] group-hover:top-0 bg-linear-to-b from-cyan-500 to-transparent h-[300px] flex flex-col align-center justify-center text-white transition-all ease-out duration-500"
               >
                 <h3
                   class="text-xl font-semibold tracking-wider mb-[0.8rem] text-yellow-500 text-shadow-[2px_2px_10px_rgba(0,0,0,0.5)]"
@@ -412,7 +417,7 @@
                 class="w-full h-[300px]"
               />
               <div
-                class="p-[1rem] text-center absolute top-[-100%] group-hover:top-0 bg-linear-to-b from-indigo-500 to-transparent h-[300px] flex flex-col align-center justify-center text-white transition-all ease-out duration-500"
+                class="p-[1rem] text-center absolute top-[-100%] group-hover:top-0 bg-linear-to-b from-cyan-500 to-transparent h-[300px] flex flex-col align-center justify-center text-white transition-all ease-out duration-500"
               >
                 <h3
                   class="text-xl font-semibold tracking-wider mb-[0.8rem] text-yellow-500 text-shadow-[2px_2px_10px_rgba(0,0,0,0.5)]"
@@ -440,7 +445,7 @@
                 class="w-full h-[300px]"
               />
               <div
-                class="p-[1rem] text-center absolute top-[-100%] group-hover:top-0 bg-linear-to-b from-indigo-500 to-transparent h-[300px] flex flex-col align-center justify-center text-white transition-all ease-out duration-500"
+                class="p-[1rem] text-center absolute top-[-100%] group-hover:top-0 bg-linear-to-b from-cyan-500 to-transparent h-[300px] flex flex-col align-center justify-center text-white transition-all ease-out duration-500"
               >
                 <h3
                   class="text-xl font-semibold tracking-wider mb-[0.8rem] text-yellow-500 text-shadow-[2px_2px_10px_rgba(0,0,0,0.5)]"
@@ -468,7 +473,7 @@
                 class="w-full h-[300px]"
               />
               <div
-                class="p-[1rem] text-center absolute top-[-100%] group-hover:top-0 bg-linear-to-b from-indigo-500 to-transparent h-[300px] flex flex-col align-center justify-center text-white transition-all ease-out duration-500"
+                class="p-[1rem] text-center absolute top-[-100%] group-hover:top-0 bg-linear-to-b from-cyan-500 to-transparent h-[300px] flex flex-col align-center justify-center text-white transition-all ease-out duration-500"
               >
                 <h3
                   class="text-xl font-semibold tracking-wider mb-[0.8rem] text-yellow-500 text-shadow-[2px_2px_10px_rgba(0,0,0,0.5)]"
@@ -496,7 +501,7 @@
                 class="w-full h-[300px]"
               />
               <div
-                class="p-[1rem] text-center absolute top-[-100%] group-hover:top-0 bg-linear-to-b from-indigo-500 to-transparent h-[300px] flex flex-col align-center justify-center text-white transition-all ease-out duration-500"
+                class="p-[1rem] text-center absolute top-[-100%] group-hover:top-0 bg-linear-to-b from-cyan-500 to-transparent h-[300px] flex flex-col align-center justify-center text-white transition-all ease-out duration-500"
               >
                 <h3
                   class="text-xl font-semibold tracking-wider mb-[0.8rem] text-yellow-500 text-shadow-[2px_2px_10px_rgba(0,0,0,0.5)]"
@@ -524,7 +529,7 @@
                 class="w-full h-[300px]"
               />
               <div
-                class="p-[1rem] text-center absolute top-[-100%] group-hover:top-0 bg-linear-to-b from-indigo-500 to-transparent h-[300px] flex flex-col align-center justify-center text-white transition-all ease-out duration-500"
+                class="p-[1rem] text-center absolute top-[-100%] group-hover:top-0 bg-linear-to-b from-cyan-500 to-transparent h-[300px] flex flex-col align-center justify-center text-white transition-all ease-out duration-500"
               >
                 <h3
                   class="text-xl font-semibold tracking-wider mb-[0.8rem] text-yellow-500 text-shadow-[2px_2px_10px_rgba(0,0,0,0.5)]"
